@@ -12,7 +12,9 @@
 <body>
     <div class="main-div">
         <div class="inner-div">
-            <h2 class="question">Qutions Appear HERE </h2>
+            <h1>Shopify Quiz App</h1>
+            <h2 class="question-count">Questions</h2>
+            <h3 class="question">Questions Appear HERE </h3>
             <div class=radio-group>
                 <input type="radio" name="answer" id="ans1" class='answer'>
                 <label for="ans1" id="option1">Answer 1</label><br>
@@ -22,10 +24,12 @@
                 <label for="ans3" id="option3">Answer 3</label><br>
                 <input type="radio" name="answer" id="ans4" class='answer'>
                 <label for="ans4" id="option4">Answer 4</label><br>
+                <h4 class="error">Error: Please select an option to continue.</h4>
             </div>
-             
-            <button id="submit">SUBMIT </button>
-
+                
+                <button id="next">Next ></button>
+                <button id="back">< Back</button>
+            
             <div id="showScore" class="scoreArea">
 
             </div>
