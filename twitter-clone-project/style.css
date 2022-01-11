@@ -1,0 +1,34 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    width: 100%;
+}
+.main-container {
+    margin: auto;
+    width: 40%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+}
+.header-container {
+    margin: auto;
+    padding: 0 15px;
+ 
+}
+.cover-photo-container {
+    
+}
+.profile-photo {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 150px;
+    margin: -15% 0 0 2%;
+}
+.profile-details-container {
+    
+}
+.tweets-container {
+    
+}
