@@ -6,16 +6,59 @@
 img {
     width: 100%;
 }
+h2 {
+    padding: 3px;
+}
 .main-container {
     margin: auto;
     width: 40%;
-    height: 100%;
     border: 1px solid #f1f1f1;
 }
 .header-container {
     margin: auto;
-    padding: 0 15px;
- 
+    display: flex;
+}
+.header-btn {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-info {
+    margin: 10px;
+    width: 65%;
+    display: block;
+}
+.back-btn {
+    display: flex;
+    font-size: 28px;
+    font-weight: 300;
+    color: #1DA1F2;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.back-btn:hover {
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.verified-btn {
+    margin: 0 5px;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 16px;
+    width: 23px;
+    height: 23px;
+    vertical-align: top;
+}
+.lighter-text {
+    color: grey;
 }
 .cover-photo-container {
     

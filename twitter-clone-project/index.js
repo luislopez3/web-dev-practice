@@ -1,11 +1,12 @@
 var user1 = {
     userName: '@elonmusk',
     displayName: 'Elon Musk',
+    tweetCount: "13.6K",
     joinedDate: 'June 2009',
     followingCount: 103,
     followerCount: 47900000,
-    avatarURL: 'assets/elonmusk.jpg',
-    coverPhotoURL: 'assets/elonmusk-cover.jpeg',
+    avatarURL: 'assests/elonmusk.jpg',
+    coverPhotoURL: 'assests/elonmusk-cover.jpeg',
     tweets: [
         {
             text: 'I admit to judging books by their cover',
@@ -25,6 +26,7 @@ var user1 = {
 var user2 = {
     userName: '@BillGates',
     displayName: 'Bill Gates',
+    tweetCount: 3781,
     joinedDate: 'June 2009',
     followingCount: 274,
     followerCount: 53800000,
@@ -46,3 +48,29 @@ var user2 = {
     ]
 };
 
+var headerContainer = document.querySelector(".header-container");
+var coverPhotoContainer = document.querySelector(".cover-photo-container");
+var profileDetailsContainer = document.querySelector(".profile-details-container");
+
+
+headerContainer.innerHTML = `
+<div class="header-btn">
+    <button class="back-btn">←</button>
+</div>
+<div class="header-info">
+    <h2>${user1.displayName}<button class="verified-btn">✓</button></h2>
+    <p class="lighter-text">${user1.tweetCount} Tweets</p>
+</div>
+`;
+
+coverPhotoContainer.innerHTML = `
+    <img src=${user1.coverPhotoURL} alt="Cover Photo or User">
+`;
+
+profileDetailsContainer.innerHTML = `
+    <img class="profile-photo" src=${user1.avatarURL} alt="Avatar Photo of User's Choice">
+    <h2>${user1.displayName}<button class="verified-btn">✓</button></h2>
+    <p class="lighter-text">${user1.userName}</p></br>
+    <p class="lighter-text"><img style="width: 20px"src="https://img.icons8.com/ios/250/0/calendar.png"> Joined ${user1.joinedDate}</p></br>
+    <h2>${user1.followingCount} <p class="lighter-text">Following</p> ${user1.followerCount} <p class="lighter-text">Followers</p></h2>
+`;
